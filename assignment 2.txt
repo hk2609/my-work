@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Assignment 2</title>
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+    font-family:Tenor;
+    /* box-sizing: border-box; */
+    
+}
+@font-face {
+    font-family: Tenor;
+    src: url(TenorSans-Regular.ttf);
+}
+.container{
+    width: 1200px;
+     margin-left:38px ;
+    background-image: url(./pexels-jana-kukebal-6496462.jpg);
+}
+h1{
+
+    text-align: center;
+}
+table, tr, td, th{
+    border: 1px solid;
+    border-collapse: collapse;
+    background-color: papayawhip;
+    color:black;
+    padding: 5px;   
+}
+
+.questions{
+    margin: 30px;
+    background-color:none;
+}
+ 
+.q6ans{
+    background-color: rgb(255, 255, 255);
+
+}
+.q7a1 img{
+    background-repeat:repeat; 
+    background-image: url(images.jpg);
+      
+}
+.q7a2 img{
+    background-image: url(images.jpg);
+    background-repeat:no-repeat;  
+
+}
+.box{
+    width:300px;
+    margin:2rem auto;
+    background-color: rgb(255, 255, 255);
+    color: rgb(134, 0, 0);
+}
+
+.layout{
+    background-color: whitesmoke;
+}
+.lay-tr{
+    display: flex;
+}
+.pd1{
+    margin: 10px;
+    background-color: rgb(213, 213, 213);
+    border: none;
+    
+}
+.thumbnail{
+    background-color: red;
+    color: white;
+    /* width: 200px; */
+    padding: 80px;
+    text-align: center;
+    background-image: url(./pexels-photo-531880.jpeg);
+}
+.imf{
+    margin: 20px;
+
+}
+.btn{
+    margin-top: 15px;
+    /*margin-left: 108px;*/
+}
+    </style>
+    
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>
+                Assignment-Module 2 (CSS and CSS 3)
+            </h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="q1 questions">
+                <h3>
+                    Q1: What are the benefits of using CSS?
+                </h3>
+                <p>
+                <pre>
+                CSS handles the look and feel part of a web page.
+                <b><i>Some of the advantages of using CSS are:</i></b>
+              •  Easier to maintain and update.
+              •  Greater consistency in design.
+              •  More formatting options.
+              •  Lightweight code.
+              •  Faster download times.
+              •  Search engine optimization benefits.
+              •  Ease of presenting different styles to different viewers.
+              • Greater accessibility.
+            </pre>
+                </p>
+            </div>
+            <div class="q2 questions">
+                <h3>
+                   Q2: What are the disadvantages of CSS?
+                </h3>
+                <p>
+                <pre>
+                <b>Disadvantages of CSS:</b>
+              • Cross-Browser Issues
+              • Confusion Due to Its Many Levels.
+              • unexpected behavers
+              •  Security issues
+              • Differences in display
+              • extra work of developers
+            </pre>
+
+                </p>
+            </div>
+            
+
+            <div class="q3 questions">
+                <h3>
+                    Q3: What is the difference between CSS2 and CSS3?
+                </h3>
+                <p>
+                <table>
+                    <tr>
+                        <th>CSS2</th>
+                        <th>CSS3</th>
+                    </tr>
+                    <tr>
+                        <td>-CSS splits up different sections of the code into modules,</td>
+                        <td>-Both CSS and HTML were put into a single file, there was no concept of modules before.</td>
+                    </tr>
+                    <tr>
+                        <td>-There are new ways you can write CSS rules with a bunch of CSS selectors</td>
+                        <td>-There were no new ways of writing the CSS rules.</td>
+                    </tr>
+                    <tr>
+                        <td>-There is no backward compatibility with CSS2</td>
+                        <td>-There is backward compatibility maintained with CSS3</td>
+                    </tr>
+                    <tr>
+                        <td>-With CSS2 only web safe fonts can be used</td>
+                        <td>-With CSS3 special fonts can be used such as those in Google Fonts and TypeCast</td>
+                    </tr>
+                    <tr>
+                        <td>-With CSS2 the concept of simple, selectors were present</td>
+                        <td>-With CSS3 the selectors were called as a sequence of simple seletors.com</td>
+                    </tr>
+                    <tr>
+                        <td>-Using CSS2, for rounded borders, coding the css styles were complex</td>
+                        <td>-With CSS3, there is provision for automatically assigning rounded borders to objects21</td>
+                    </tr>
+                    <tr>
+                        <td>-CSS 2, splitting text into multiple columns required complex coding because the standard was
+                            not equipped enough to break the text into columns so that it would fit into a box</td>
+                        <td>-CSS3 has the capability to split text into various columns so that each text block appears
+                            as a layout of the newspaper.</td>
+                    </tr>
+                    <tr>
+                        <td>-CSS 2 Doesn't support the BorderBox property</td>
+                        <td>-CSS3 supports the Border-Box property</td>
+                    </tr>
+                </table>
+
+                </p>
+
+            </div>
+
+            
+
+            <div class="q4 questions">
+                <h3>
+                    Q4: Name a few CSS style components?
+                </h3>
+
+                <pre>
+                    •  <b>Selector:</b> class name, id name or element name that is target
+                    •<b>Attribute:</b> name of the attribute you want to style for example border, color,background, position etc.
+                    • <b>Value of Property:</b> value that will be assigned to attribute.
+                </pre>
+
+            </div>
+
+            
+
+            <div class="q5 questions">
+                <h3>
+                   Q5: What do you understand by CSS opacity?
+                </h3>
+                <p>
+                    • The opacity CSS property sets the opacity of an element. Opacity is the degree to which content
+                    behind an element is hidden, and is the opposite of transparency.
+                </p>
+            </div>
+            
+
+            <div class="q6 questions">
+                <h3>
+                   Q6: How can the background color of an element be changed?
+                </h3>
+                <div class="q6ans">
+                    <p>using bg color of an element can be changed.</p>
+                </div>
+            </div>
+            
+
+            <div class="q7 questions">
+                <h3>
+                    Q7: How can image repetition of the backup be controlled?
+                </h3>
+                <p> 
+
+                    use the background-repeat property.
+                </p>
+
+            </div>
+            
+
+            <div class="q8 questions">
+                <h3>
+                   Q8: What is the use of the background-position property?
+                </h3>
+                <p>
+                    CSS properties allow authors to specify the foreground color and background of an element.
+                    Backgrounds may be colors or images. Background properties allow authors to position a background
+                    image, repeat it, and declare whether it should be fixed with respect to the viewport or scrolled
+                    along with the document.
+                </p>
+            </div>
+            
+
+            <div class="q9 questions">
+                <h3>
+                    Q9: Which property controls the image scroll in the background?
+                </h3>
+                <p>
+                    The background-attachment property sets whether a background image scrolls with the rest of the
+                    page, or is fixed. <br>
+                <pre>   <b> Syntax:</b>background-attachment: scroll , fixed , local , initial , inherit;</pre>
+                </p>
+            </div>
+
+           
+
+            <div class="q10 questions">
+                <h3>
+                   Q10: Why should background and color be used as separate properties?
+                </h3>
+                <p>
+                    The background property is a complex property in CSS, and if it is combined with color, the
+                    complexity will further increase. Color is an inherited property while the background is not.
+                </p>
+            </div>
+            
+            
+
+            <div class="q11 questions">
+                <h3>
+                   Q11: How to center block elements using CSS1?
+                </h3>
+                <div class="box">
+                    <p>this is a box
+                    <p>
+                </div>
+            </div>
+            
+            
+
+            <div class="q12 questions">
+                <h3>
+                   Q12: How to maintain the CSS specifications?
+                </h3>
+                <p>The CSS specifications are maintained by the World Wide Web Consortium (W3C).
+                </p>
+            </div>
+            
+            
+
+            <div class="q13 questions">
+                <h3>
+                  Q13: What are the ways to integrate CSS as a web page?
+                </h3>
+                <pre>
+                CSS can be added to HTML documents in 3 ways:
+               1. Inline - by using the style attribute inside HTML elements.
+               2. Internal - by using a <b> style </b>element in the  (head) section.
+               3. External - by using a (link) element to link to an external CSS file.
+                 </pre>
+            </div>
+            
+            
+
+            <div class="q14 questions">
+                <h3>
+                   Q14: What is embedded style sheets?
+                </h3>
+                <p>
+                    Embedded style sheets allow you to define styles for the whole HTML document in one place. Embedded
+                    style sheets refer to when you embed style sheet information into an HTML document using the (style)
+                    element. You do this by embedding the style sheet information within (style> /style>) tags in the
+                    head of your document.
+                </p>
+            </div>
+
+             
+
+            <div class="q15 questions">
+                <h3>
+                   Q15: What are the external style sheets?
+                </h3>
+                <p>
+                    An external style sheet is a separate CSS file that can be accessed by creating a link within the
+                    head section of the webpage. Multiple webpages can use the same link to access the stylesheet.
+                </p>
+            </div>
+
+             
+
+            <div class="q16 questions">
+                <h3>
+                   Q16: What are the advantages and disadvantages of using external style sheets?
+                </h3>
+
+                <pre>
+
+                <b> Advantages</b>
+                
+                1) The style of a few documents can be controlled from the site by utilizing them.
+                2) Multiple HTML elements can have numerous documents, where classes can be made.
+                3) To assemble styles in complex circumstances, selector and grouping strategies are utilized.
+                
+                <b> Disadvantages</b>
+                
+                1) The additional download is expected to import documents having style information.
+                2) To render the documents, the outer template ought to be stacked.
+                3) Not practical for small style definitions.
+
+                </pre>
+            </div>
+
+            
+
+            <div class="q17 questions ">
+                <h3>
+                  Q17: What is the meaning of the CSS selector?
+                </h3>
+                <p>
+                    •A CSS selector is the first part of a CSS Rule. It is a pattern of elements and other terms that
+                    tell the browser which HTML elements should be selected to have the CSS property values inside the
+                    rule applied to them.
+                </p>
+                <p>
+                    • There are several different types of selectors: <br>
+                <pre>    type , class , ID , descendant , child , universal , attribute , pseudo-class , pseudo-elemen ets.</pre>
+                </p>
+            </div>
+
+             
+
+            <div class="q18 questions">
+                <h3>
+                  Q18: What are the media types allowed by CSS?
+                </h3>
+                <div>
+                    <table>
+                        <tr>
+                            <th>Value</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>all</td>
+                            <td>Used for all media type devices</td>
+                        </tr>
+                        <tr>
+                            <td>print</td>
+                            <td>Used for printers</td>
+                        </tr>
+                        <tr>
+                            <td>screen</td>
+                            <td>Used for computer screens, tablets, smart-phones etc.</td>
+                        </tr>
+                        <tr>
+                            <td>speech</td>
+                            <td>Used for screenreaders that "reads" the page out loud</td>
+                        </tr>
+
+                    </table>
+                </div>
+
+                 
+
+                <div class="q19 questions">
+                    <h3>
+                    Q19: What is the rule set?
+                    </h3>
+                    <p>The complete declaration is a ruleset. It is a various affirmations to various pieces or elements of the document. The
+                    objective is to apply a bunch of properties for certain distinct qualities to a solitary, or a
+                    particular arrangement of components in the connected HTML page. </p>
+                </div>
+
+                 
+                <div class="q20 questions">
+                    <h3>Q20: Create Layouts 
+                    </h3>
+                </div>
+                <div class="layout">
+                    <div class="lay-tr">
+                        <div class="pd1">
+                            <div class="thumbnail"> THUMBNAIL</div>
+                            <div class="imf">Hi There!<br>
+                                Here I am submitting My Assignment Module-2.
+                                <div class="btn">
+                                    <table>
+                                        <tr>
+                                            <td>View</td>
+                                            <td>Edit</td>
+                                        </tr>
+                                    </table>
+                                                                      
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="pd1">
+                            <div class="thumbnail"> THUMBNAIL</div>
+                            <div class="imf">Hi There!<br>
+                                Here I am submitting My Assignment Module-2.
+                                <div class="btn">
+                                    <table>
+                                        <tr>
+                                            <td>View</td>
+                                            <td>Edit</td>
+                                        </tr>
+                                    </table>
+                                                                      
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="pd1">
+                            <div class="thumbnail"> THUMBNAIL</div>
+                            <div class="imf">Hi There!<br>
+                                Here I am submitting My Assignment Module-2.
+                                <div class="btn">
+                                    <table>
+                                        <tr>
+                                            <td>View</td>
+                                            <td>Edit</td>
+                                        </tr>
+                                    </table>
+                                                                      
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="lay-tr">
+                        <div class="pd1">
+                            <div class="thumbnail"> THUMBNAIL</div>
+                            <div class="imf">Hi There!<br>
+                                Here I am submitting My Assignment Module-2.
+                                <div class="btn">
+                                    <table>
+                                        <tr>
+                                            <td>View</td>
+                                            <td>Edit</td>
+                                        </tr>
+                                    </table>
+                                                                      
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="pd1">
+                            <div class="thumbnail"> THUMBNAIL</div>
+                            <div class="imf">Hi There!<br>
+                                Here I am submitting My Assignment Module-2.
+                                <div class="btn">
+                                    <table>
+                                        <tr>
+                                            <td>View</td>
+                                            <td>Edit</td>
+                                        </tr>
+                                    </table>
+                                                                      
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="pd1">
+                            <div class="thumbnail"> THUMBNAIL</div>
+                            <div class="imf">Hi There!<br>
+                                Here I am submitting My Assignment Module-2.
+                                <div class="btn">
+                                    <table>
+                                        <tr>
+                                            <td>View</td>
+                                            <td>Edit</td>
+                                        </tr>
+                                    </table>
+                                                                      
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
