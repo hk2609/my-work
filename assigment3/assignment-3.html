@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Basic & DOM Assignment</title>
+    <style>
+        body{
+            font-family: comfortaa;
+        }
+        .header {
+            text-align: center;
+        }
+
+        span {
+            font-weight: bolder;
+        }
+
+        p {
+            font-size: 1.3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="header">
+            <h1>
+                Module(JAVASCRIPT BASIC & DOM)-4
+            </h1>
+        </div>
+    </header>
+
+    <!-- main -->
+    <Main>
+        <div class="container">
+            <div class="que1">
+                <h2>
+                    1) What is JavaScript?
+                </h2>
+                <blockquote>
+                    <p>
+                        JavaScript is a dynamic programming language that's used for web development, in web
+                        applications, for game development, and lots more. It allows you to implement dynamic features
+                        on web pages that cannot be done with only HTML and CSS.
+                    </p>
+                </blockquote>
+            </div>
+            <div class="que2">
+                <h2>
+                    2) What is the use of isNaN function?
+                </h2>
+                <blockquote>
+                    <p>
+                        The isNaN() function is used to check whether a given value is an illegal number or not. It
+                        returns true if value is a NaN else returns false. It is different from the Number.isNaN()
+                        Method.
+                    </p>
+                </blockquote>
+            </div>
+            <div class="que3">
+                <h2>
+                    3) What is negative Infinity?
+                </h2>
+                <blockquote>
+                    <p>
+                        The negative infinity in JavaScript is a constant value which is used to represent a value which
+                        is the lowest available. This means that no other number is lesser than this value. It can be
+                        generated using a self-made function or by an arithmetic operation.
+                    </p>
+                </blockquote>
+            </div>
+            <div class="que4">
+                <h2>
+                    4) Which company developed JavaScript?
+                </h2>
+                <blockquote>
+                    <p>
+                        The first JavaScript engine was created by Brendan Eich at Netscape, for the Netscape Navigator
+                        Web browser. The engine, code-named SpiderMonkey, is implemented in C. It has since been updated
+                        (in JavaScript 1.5) to conform to ECMAScript 3.
+                    </p>
+                </blockquote>
+            </div>
+            <div class="que5">
+                <h2>
+                    5)What are undeclared and undefined variables?
+                </h2>
+                <blockquote>
+                    <p>
+                        <span> Undefined:</span> It occurs when a variable has been declared but has not been assigned
+                        with any value.
+                        Undefined is not a keyword.
+
+                        <span> Undeclared:</span> It occurs when we try to access any variable that is not initialized
+                        or declared
+                        earlier using var or const keyword. If we use 'typeof' operator to get the value of an
+                        undeclared variable, we will face the runtime error with return value as “undefined”. The scope
+                        of the undeclared variables is always global.
+                    </p>
+                </blockquote>
+            </div>
+            <div class="que6">
+                <h2>
+                    6)Write the code for adding new elements dynamically?
+                </h2>
+                <blockquote>
+                    <p>
+                        <button onclick="myfunction()">click me</button>
+                    <p id="sample"></p>
+
+                    <script>
+                        function myfunction() {
+                            document.getElementById("sample").innerHTML = "Hi There!";
+                        }
+                    </script>
+                    </p>
+                </blockquote>
+            </div>
+            <div class="que7">
+                <h2>
+                    7) What is the difference between ViewState and SessionState?
+                </h2>
+                <blockquote>
+                    <p>
+                        <span> SessionState:</span>
+                        If you want to store infromation that you want to access on different pages then you can use
+                        SessionState.
+                        SessionState is saved on the server.
+                        Data stored in the SesionState will be cleared when the session expired(usually after 20min of
+                        inactivity when using session inproc).
+                        SesionState is used to save the user specific data like UserID, User Role, etc.
+                    </p>
+
+                    <p>
+                        <span> ViewState:</span>
+                        If you want to store information that you want to access only with in the page(same page) then
+                        you can use ViewState.
+                        ViewState is saved in the page.
+                        Data stored in the ViewState will send back to the server when postback action performed (no
+                        expiration).
+                        ViewState is used primarily by Server controls to retain state only on pages that post data back
+                        to themselves. And when you want to save the pagelevel data you can use ViewState.
+                    </p>
+                </blockquote>
+            </div>
+            <div class="que8">
+                <h2>
+                    8) What is === operator?
+                </h2>
+                <blockquote>
+                    <p>
+                        The strict equality operator (===) checks whether its two operands are equal, returning a
+                        Boolean result. Unlike the equality operator, the strict equality operator always considers
+                        operands of different types to be different.
+                    </p>
+                </blockquote>
+            </div>
+            <div class="que9">
+                <h2>
+                    9) How can the style/class of an element be changed?
+                </h2>
+                <blockquote>
+                    <p>
+                        The class name is used as a selector in HTML which helps to give some value to the element
+                        attributes. The document. getElementById() method is used to return the element in the document
+                        with the “id” attribute and the “className” attribute can be used to change/append the class of
+                        the element.
+                    </p>
+                </blockquote>
+            </div>
+            <div class="que10">
+                <h2>
+                    10) How to read and write a file using JavaScript?
+                </h2>
+                <blockquote>
+                    <p>
+                        <span> There are two ways to do it:</span>
+                        1. Using JavaScript extensions (runs from JavaScript Editor), or
+                        2. Using a web page and ActiveX objects (Internet Explorer only)
+                        In JavaScript Extensions, you can use
+                        fh = fopen(getScriptPath(), 0); to open a file
+                        Using ActiveX objects, following should be included in your code to read a file:
+                        var fso = new ActiveXObject("Scripting.FileSystemObject");
+                        var s = fso.OpenTextFile("C:\\example.txt", 1, true).
+                    </p>
+                </blockquote>
+            </div>
+            <div class="que11">
+                <h2>
+                    11) What are all the looping structures in JavaScript?
+                </h2>
+                <blockquote>
+                    <p>
+                        In Java, there are three kinds of loops which are – the for loop, the while loop, and the
+                        do-while loop. All these three loop constructs of Java executes a set of repeated statements as
+                        long as a specified condition remains true. This particular condition is generally known as loop
+                        control.
+                    </p>
+                </blockquote>
+            </div>
+            <div class="que12">
+                <h2>
+                    12) 12. How can you convert the string of any base to an integer in JavaScript?
+                </h2>
+                <blockquote>
+                    <p>
+                        In JavaScript parseInt() function (or a method) is used to convert the passed in string
+                        parameter or value to an integer value itself. This function returns an integer of base which is
+                        specified in second argument of parseInt() function.
+                        <br>
+                        parseInt() function returns Nan( not a number) when the string doesn’t contain number.
+                    </p>
+                </blockquote>
+            </div>
+            <div class="que13">
+                <h2>
+                    13) What is the function of the delete operator?
+                </h2>
+                <blockquote>
+                    <p>
+                        In JavaScript, the delete operator is employed to delete a property of an object. After deleting
+                        the actual property, that property won’t be accessible and returns undefined.
+                    </p>
+                </blockquote>
+            </div>
+            <div class="que14">
+                <h2>
+                    14) What are all the types of Pop up boxes available in JavaScript?
+                </h2>
+                <blockquote>
+                    <p>
+                        In Javascript, popup boxes are used to display the message or notification to the user. There
+                        are three types of pop-up boxes in JavaScript namely Alert Box, Confirm Box and Prompt Box.
+                    </p>
+                </blockquote>
+            </div>
+            <div class="que15">
+                <h2>
+                    15) What is the use of Void (0)?
+                </h2>
+                <blockquote>
+                    <p>
+                        JavaScript void 0 means returning undefined (void) as a primitive value. You might come across
+                        the term “JavaScript:void(0)” while going through HTML documents. It is used to prevent any side
+                        effects caused while inserting an expression in a web page.
+                    </p>
+                </blockquote>
+            </div>
+            <div class="que16">
+                <h2>
+                    16) How can a page be forced to load another page in JavaScript?
+                </h2>
+                <blockquote>
+                    <p>
+                        <!-- We can use window. location property inside the script tag to forcefully load another page in
+                        Javascript. It is a reference to a Location object that is it represents the current location of
+                        the document. We can change the URL of a window by accessing it. -->
+                    </p>
+
+                    <p>
+                        <button onclick="force_load_gfg()">
+                            Force Load GFG Page
+                        </button>
+
+                        <script>
+                            function force_load_gfg() {
+                                window.location =
+                                    "F:/gfg/PageRedirect/newPage.html"
+                            }
+                        </script>
+                    </p>
+                </blockquote>
+            </div>
+            <div class="que17">
+                <h2>
+                    17) What are the disadvantages of using innerHTML in JavaScript?
+                </h2>
+                <blockquote>
+                    <p>
+                        There is no append support without reparsing the whole innerHTML. This makes changing innerHTML
+                        directly very slow. innerHTML does not provide validation and therefore we can potentially
+                        insert valid and broken HTML in the document and break it.
+                    </p>
+                </blockquote>
+            </div>
+        </div>
+
+    </Main>
+</body>
+
+</html>
