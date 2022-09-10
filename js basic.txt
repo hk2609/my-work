@@ -1,0 +1,10 @@
+* javascript
+ -dynamic and interactive  .
+ 
+
+ * purpose
+ for visitors....js make page more interactive
+
+HTML to define the content of web pages.
+CSS to specify the layout of web pages.
+JavaScript to program the behavior of web page
