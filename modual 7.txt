@@ -1,0 +1,59 @@
+        Web Designing Assignment
+        Term-1
+        Module (7) -   jquery basic , effects&amp; , advance  .                                                                                                                                                   
+                                             -HARDIK UNAGAR.                       
+
+                    1) What is jQuery?
+                    :- jQuery is a lightweight JavaScript library that greatly simplifies JavaScript programming.In short its refered as "write less do more".
+                        It is designed to simplify the client-side scripting of HTML.
+                        The main purpose of jQuery is to provide an easy way to use JavaScript on your website to make it more interactive and attractive. It is also used to add animation.
+                    
+                    2)How to apply CSS using jQuery, How to Add Class and Remove Class in jQuery, jQuery Animation?
+                    :- Applying CSS using jQuery:
+
+                        The .css() method is a convenient way to use and apply CSS using jQuery.It sets or returns one or more style properties for the selected elements.
+                        Syntax:$(selector).css(property)
+                        Example: $("p").css("background-color","green");   
+ 
+                    :-Add Class and Remove Class in jQuery:
+                        
+                      1)  The addClass() method adds one or more class names to the selected elements.
+                        This method does not remove existing class attributes, it only adds one or more class names to the class attribute.(with using spaces when adding multiple classes)
+                        Syntax: $(selector).addClass(classname,function(index,current/oldclass))
+                        
+                      2) The jQuery remove() method is used to remove the selected elements out of the DOM.<br>It removes the selected element itself, as well as everything inside it (including all texts and child nodes). This method also removes the data and the events of the selected elements.
+                        Syntax: $(selector).remove(selector) 
+                        
+                     :- The jQuery animate() method provides you a way to create custom animations.
+                        This method changes an element from one state to another with CSS styles. The CSS property value is changed gradually, to create an animated effect.
+                        Syntax:$(selector).animate({params}, speed, callback); 
+                        (style="font: 15px comfortaa; font-style: italic;")(Here, params parameter defines the CSS properties to be animated.
+                        The speed parameter is optional and specifies the duration of the effect. It can be set as "slow" , "fast" or milliseconds.
+                        The callback parameter is also optional and it is a function which is executed after the animation completes.)
+
+                    3) How to create slider with animation?
+                     :- With jQuery we can create a sliding effect on elements.
+                        jQuery has the following slide methods:
+
+                        slideDown()
+                        The jQuery slideDown() method is used to slide down an element.
+                        Syntax:$(selector).slideDown(speed,callback)
+                        
+                        slideUp
+                        The jQuery slideup() method is used to slide up an element.
+                            <u>Syntax:$(selector).slideUp(speed,callback)
+                       
+                        slideToggle()
+                        The jQuery slideToggle() method toggles between the slideDown() and slideUp() methods.
+                            If the elements have been slid down, slideToggle() will slide them up.
+                            If the elements have been slid up, slideToggle() will slide them down.
+                            Syntax:$(selector).slideToggle(speed,callback);
+                     
+                     
+                        
+                        
+
+
+                        
+               
+                  
