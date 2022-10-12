@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./AdvanceJavascript.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Advance Javascirpt Assignment</title>
+</head>
+
+<body>
+
+    <!-- HEADER IS START -->
+    <header>
+
+        <div class="header-wrapper">
+
+            <h1>
+                (Advance Javascript):ASSIGNMENT
+            </h1>
+
+        </div>
+
+    </header>
+
+    <section>
+        <div class="module_wrapper">
+            <h2>MODULE:1 : (Introduction and Code Quality)</h2>
+        </div>
+    </section>
+    <!-- HEADER IS END -->
+
+    <!-- MAIN IS START -->
+    <section>
+
+        <div class="question_wrapper">
+
+            <div class="q_1">
+                <h3>[1] Write a program to Show an alert.</h3>
+                <blockquote>
+                    <button id="btn_1" class="btn">Click Me to Show an Alert</button>
+                </blockquote>
+                <hr>
+            </div>
+
+            <div class="q_2">
+                <h3>[2] What will be the result for these expressions?.</h3>
+                <blockquote>
+                    <h3>1) 5 > 4</h3>
+                    <p id="Q_21_demo"></p>
+
+                    <h3>2) "apple" > "pineapple"</h3>
+                    <p id="Q_22_demo"></p>
+
+                    <h3>3) "2" > "12"</h3>
+                    <p id="Q_23_demo"></p>
+
+                    <h3>4) undefined == null</h3>
+                    <p id="Q_24_demo"></p>
+
+                    <h3>5) undefined === null</h3>
+                    <p id="Q_25_demo"></p>
+
+                    <h3>6) null == "\n0\n"</h3>
+                    <p id="Q_26_demo"></p>
+
+                    <h3>7) null === +"\n0\n"</h3>
+                    <p id="Q_27_demo"></p>
+                </blockquote>
+                <hr>
+            </div>
+
+            <div class="q_3">
+                <h3>[3] Will alert be shown?</h3>
+                <blockquote>
+                    <h3>[ if ("0") { alert( 'Hello'); } ]</h3>
+                    <button id="btn_3" class="btn">Check</button>
+                </blockquote>
+                <hr>
+            </div>
+
+            <div class="q_4">
+                <h3>[4] What is the code below going to output?</h3>
+                <blockquote>
+                    <h3>[ alert( null || 2 || undefined ); ]</h3>
+                    <button id="btn_4" class="btn">Check Output</button>
+                </blockquote>
+                <hr>
+            </div>
+
+            <div class="q_5">
+                <h3>[5] The following function returns true if the parameter age is greater than
+                    18 Otherwise it asks for a confirmation and returns its result:</h3>
+                <blockquote>
+                    <h3>
+                        <pre>
+                        <code>
+                            function
+                            checkAge(age)
+                            {
+                            if (age> 18) { return true; }
+                            else {
+                            // ...return confirm ('did parents allow you?');
+                            }
+                            }
+                        </code>
+                    </pre>
+                    </h3>
+                    <label for="age">Enter Your Age :</label>
+                    <input type="number" name="age" id="age">
+                    <button id="btn_5" class="btn">Check Age</button>
+                </blockquote>
+                <hr>
+            </div>
+
+            <div class="q_6">
+                <h3>[6] Replace Function Expressions with arrow functions in the code below:</h3>
+                <blockquote>
+                    <h3>
+                        <pre>
+                        <code>
+                            Function
+                            ask(question, yes, no)
+                            { if (confirm(question))yes();
+                            else
+                            no();
+                            }
+                            ask("Do you agree?", function()
+                            { alert("You agreed."); },
+                            function() {
+                            alert("You canceled the execution."); }
+                            }
+                        </code>
+                        </pre>
+                    </h3>
+                    <button id="btn_6" onclick="convert()" class="btn">Convert In Arrow Fucntion</button>
+                    <pre>
+                        <code id="converted_arrow_fun">
+                            
+                        </code>
+                    </pre>
+                </blockquote>
+                <hr>
+            </div>
+
+            <div class="q_7">
+                <h3>[7] Create a program to hide/show the password:</h3>
+                <blockquote>
+                    <label for="age">Enter The Password:</label>
+                    <input type="password" name="password" id="password">
+                    <button id="btn_7" onclick="showHide()" class="btn">Show/Hide</button>
+                    <pre>
+                        <code id="converted_arrow_fun">
+
+                        </code>
+                    </pre>
+                </blockquote>
+                <hr>
+            </div>
+
+            <div class="q_8">
+                <h3>[8] Create a program that will select all the classes and loop over and whenever i click the
+                    button the alert should show:</h3>
+                <blockquote>
+
+                </blockquote>
+                <hr>
+            </div>
+
+            <div class="q_9">
+                <h3>[9] Create a responsive header using proper JavaScript:</h3>
+                <div class="container">
+                    <header class="header-area">
+                        <!-- site-navbar start -->
+                        <div class="navbar-area">
+                            <div class="container">
+                                <nav class="site-navbar">
+                                    <!-- site logo -->
+                                    <a href="#home" class="site-logo">logo</a>
+
+                                    <!-- site menu/nav -->
+                                    <ul>
+                                        <li><a href="#">home</a></li>
+                                        <li><a href="#">about</a></li>
+                                        <li><a href="#">service</a></li>
+                                        <li><a href="#">contact</a></li>
+                                    </ul>
+
+                                    <!-- nav-toggler for mobile version only -->
+                                    <button class="nav-toggler">
+                                        <span></span>
+                                    </button>
+                                </nav>
+                            </div>
+                        </div><!-- navbar-area end -->
+                    </header>
+                </div>
+                <hr>
+            </div>
+
+            <div class="q_10">
+                <h3>[10] Create a form and validate using JavaScript:</h3>
+                <div class="form_wrapper">
+                    <div class="head">
+                        <div class="container-sm">
+                            <div class="title">
+                                <h1>Sign Up Now!</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-smm">
+                        <form action="form.php">
+                            <div class="row my">
+                                <div class="col-2"><label for="firstname">First Name:</label></div>
+                                <div class="col-4"><input type="text" name="firstname" id="firstname" required></div>
+                                <div class="col-2"><label for="name">Last Name:</label></div>
+                                <div class="col-4"><input type="lastname" name="lastname" id="lastname" required></div>
+                            </div>
+                            <div class="row my">
+                                <div class="col-3"><label for="email">E-Mail:</label></div>
+                                <div class="col-9"><input type="email" name="email" id="email" required></div>
+                            </div>
+                            <div class="row my">
+                                <div class="col-3"><label for="realpassword">Password:</label></div>
+                                <div class="col-7"><input type="password" name="realpassword" id="realpassword"
+                                        required>
+                                </div>
+                                <div class="col-2"><input onclick="showP()" type="button" name="show" id="show"
+                                        value="Show">
+                                </div>
+                            </div>
+                            <div class="row my">
+                                <div class="col-3"><label for="confirmpassword">Confirm Password:</label></div>
+                                <div class="col-7"><input type="password" name="confirmpassword" id="confirmpassword"
+                                        required>
+                                </div>
+                                <div class="col-2"><input onclick="showPa()" type="button" name="show" id="showc"
+                                        value="Show">
+                                </div>
+                            </div>
+                            <div class="row my">
+                                <div class="col-12"><input type="button" name="signup" id="signup" value="Sign Up">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+            <div class="q_11">
+                <h3>[11] Create a modal box using css and Js with three buttons:</h3>
+                <!-- Trigger/Open The Modal -->
+                <blockquote>
+                    <button id="myBtn" class="btn">Open Modal</button>
+                </blockquote>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                            <h2>Modal Header</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>Congratulations You sucessfully create modal box using css and Javascript.</p>
+                            <!-- <p>Some other text...</p> -->
+                        </div>
+                        <div class="modal-footer">
+                            <h3>Modal Footer</h3>
+                        </div>
+                    </div>
+
+                </div>
+                <hr>
+            </div>
+
+            <div class="q_12">
+                <h3>[12] Use external js library to show slider:</h3>
+                <div id="flip">Click to slide</div>
+                <div id="panel">Hello Dear! You Create Slide With Jquery.</div>
+                <hr>
+            </div>
+
+            <div class="q_13">
+                <h3>[13] Prevent the browser when i click the form submit button:</h3>
+                <div class="form_wrapper">
+                    <div class="head">
+                        <div class="container-sm">
+                            <div class="title">
+                                <h1>Sign Up Now!</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-smm">
+                        <form action="" id="my">
+                            <div class="row my">
+                                <div class="col-2"><label for="firstname">First Name:</label></div>
+                                <div class="col-4"><input type="text" name="firstname" id="firstname"></div>
+                                <div class="col-2"><label for="lastname">Last Name:</label></div>
+                                <div class="col-4"><input type="lastname" name="lastname" id="lastname"></div>
+                            </div>
+                            <div class="row my">
+                                <div class="col-3"><label for="email">E-Mail:</label></div>
+                                <div class="col-9"><input type="email" name="email" id="email"></div>
+                            </div>
+                            <div class="row my">
+                                <div class="col-3"><label for="realpassword">Password:</label></div>
+                                <div class="col-7"><input type="password" name="realpassword" id="realpassword">
+                                </div>
+                                <div class="col-2"><input onclick="showP()" type="button" name="show" id="show"
+                                        value="Show">
+                                </div>
+                            </div>
+                            <div class="row my">
+                                <div class="col-12"><input type="submit" name="submit" id="submit" value="Submit">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+            <div class="q_14">
+                <h3>[14] What is JSON:</h3>
+                <blockquote>
+                    <p>&diams; JSON stands for JavaScript Object Notation.</p>
+                    <p>&diams; JSON is a lightweight format for storing and transporting data.</p>
+                    <p>&diams; JSON is often used when data is sent from a server to a web page.</p>
+                    <p>&diams; JSON is "self-describing" and easy to understand.</p>
+                </blockquote>
+                <hr>
+            </div>
+
+            <div class="q_15">
+                <h3>[15] What is promises:</h3>
+                <blockquote>
+                    <p>&diams; A JavaScript Promise object contains both the producing code and calls to the consuming
+                        code.</p>
+                    <p>&diams; The Promise object supports two properties: state and result.</p>
+                    <p>&diams; While a Promise object is "pending" (working), the result is undefined.</p>
+                    <p>&diams; When a Promise object is "fulfilled", the result is a value.</p>
+                    <p>&diams; When a Promise object is "rejected", the result is an error object.</p>
+                </blockquote>
+                <hr>
+            </div>
+
+            <div class="q_16">
+                <h3>[16] Write a program of promises and handle that promises also:</h3>
+                <blockquote>
+                    <p>Wait 3 seconds (3000 milliseconds) for this page to change.</p>
+                    <h4 id="demo"></h4>
+                </blockquote>
+                <hr>
+            </div>
+
+        </div>
+
+    </section>
+
+
+</body>
+<script>
+    // Question-1 Start
+    document.getElementById("btn_1").addEventListener("click", function () {
+        alert("Thanks For Clicking You Have Sucessfully Showed an Alert");
+    });
+    // Question-1 End
+    // --------------------------------------------------------------------------------
+    // Question-2 Start
+    // Expr-1 start
+    document.getElementById("Q_21_demo").innerHTML = "Result = " + Boolean(5 > 4);
+    // Expr-1 end
+    // Expr-2 start
+    document.getElementById("Q_22_demo").innerHTML = "Result = " + Boolean("apple" > "pineapple");
+    // Expr-2 end
+    // Expr-3 start
+    document.getElementById("Q_23_demo").innerHTML = "Result = " + Boolean("2" > "12");
+    // Expr-3 end
+    // Expr-4 start
+    document.getElementById("Q_24_demo").innerHTML = "Result = " + Boolean(undefined == null);
+    // Expr-4 end
+    // Expr-5 start
+    document.getElementById("Q_25_demo").innerHTML = "Result = " + Boolean(undefined === null);
+    // Expr-5 end
+    // Expr-6 start
+    document.getElementById("Q_26_demo").innerHTML = "Result = " + Boolean(null == "\n0\n");
+    // Expr-6 end
+    // Expr-7 start
+    document.getElementById("Q_27_demo").innerHTML = "Result = " + Boolean(null === +"\n0\n");
+    // Expr-7 end
+    // Question-2 End
+    // --------------------------------------------------------------------------------
+    // Question-3 Start
+    document.getElementById("btn_3").addEventListener("click", function () {
+        if ("0") { alert('Yes, It will show an Alert.'); }
+    });
+    // Question-3 End
+    // --------------------------------------------------------------------------------
+    // Question-4 Start
+    document.getElementById("btn_4").addEventListener("click", function () {
+        alert(null || 2 || undefined);
+    });
+    // Question-4 End
+    // --------------------------------------------------------------------------------
+    // Question-5 Start
+    document.getElementById("btn_5").addEventListener("click", function () {
+        var age = document.getElementById("age").value;
+        if (age >= 18) {
+            return alert('Access granted');
+        } else {
+            return permission();
+        }
+    });
+    function permission() {
+        var result = confirm('Do you have permission from your parents?');
+        if (result == true) {
+            return alert('Access Granted');
+        } else {
+            return alert('Access Denied');
+        }
+    }
+    // Question-5 End
+    // --------------------------------------------------------------------------------
+    // Question-6 Start
+    function convert() {
+        document.getElementById("converted_arrow_fun").innerHTML = `function ask(question, yes, no) {
+        if (confirm(question)) yes();
+        else no();
+    }
+    
+    ask(
+        "Do you agree?",
+        () => alert("You agreed."),
+        () => alert("You canceled the execution.")
+    );`
+    }
+    // Question-6 End
+    // --------------------------------------------------------------------------------
+    // Question-7 Start
+    function showHide() {
+        var target = document.getElementById("password");
+        if (target.type === 'password') {
+            target.type = 'text';
+        } else {
+            target.type = 'password';
+        }
+    }
+
+    // Question-7 End
+    // --------------------------------------------------------------------------------
+    // Question-8 Start
+    // define all UI variable
+    const navToggler = document.querySelector(".nav-toggler");
+    const navMenu = document.querySelector(".site-navbar ul");
+    const navLinks = document.querySelectorAll(".site-navbar a");
+
+    // load all event listners
+    allEventListners();
+
+    // functions of all event listners
+    function allEventListners() {
+        // toggler icon click event
+        navToggler.addEventListener("click", togglerClick);
+        // nav links click event
+        navLinks.forEach((elem) => elem.addEventListener("click", navLinkClick));
+    }
+
+    // togglerClick function
+    function togglerClick() {
+        navToggler.classList.toggle("toggler-open");
+        navMenu.classList.toggle("open");
+    }
+
+    // navLinkClick function
+    function navLinkClick() {
+        if (navMenu.classList.contains("open")) {
+            navToggler.click();
+        }
+    }
+
+    // Question-8 End
+    // --------------------------------------------------------------------------------
+    // Question-10 Start
+    function showP() {
+        var target = document.getElementById("realpassword");
+        var btnvalue = document.getElementById("show");
+        if (target.type === 'password') {
+            target.type = 'text';
+            btnvalue.value = 'Hide'
+        } else {
+            target.type = 'password';
+            btnvalue.value = 'Show'
+        }
+    }
+
+    function showPa() {
+        var target = document.getElementById("confirmpassword");
+        var btnvalue = document.getElementById("showc");
+        if (target.type === 'password') {
+            target.type = 'text';
+            btnvalue.value = 'Hide'
+        } else {
+            target.type = 'password';
+            btnvalue.value = 'Show'
+        }
+    }
+    // Question-10 End
+    // --------------------------------------------------------------------------------
+    // Question-11 Start
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    // Question-11 End
+    // --------------------------------------------------------------------------------
+    // Question-12 Start
+    $(document).ready(function () {
+        $("#flip").click(function () {
+            $("#panel").slideToggle("slow");
+        });
+    });
+    // Question-12 End
+    // --------------------------------------------------------------------------------
+    // Question-13 Start
+    let submitTarget = document.getElementById("myform");
+
+    submitTarget.addEventListener("submit", function (e) {
+        e.preventDefault()
+        alert("From Is Submitted.")
+
+        var firstname = document.getElementById("firstname")
+        var lastname = document.getElementById("lastname")
+        var email = document.getElementById("email")
+
+        alert("Name: " + firstname + lastname + '<br>' + "E-mail: " + email)
+    });
+    // Question-13 End
+    // --------------------------------------------------------------------------------
+    // Question-14 Start
+    const myPromise = new Promise(function (myResolve, myReject) {
+        setTimeout(function () { myResolve("I love You !!"); }, 3000);
+    });
+
+    myPromise.then(function (value) {
+        document.getElementById("demo").innerHTML = value;
+    });
+// Question-14 End
+</script>
+
+</html>
