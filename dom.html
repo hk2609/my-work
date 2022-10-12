@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./JavascriptBomDom.css">
+    <title>Advance Javascirpt Assignment</title>
+</head>
+
+<body>
+
+    <!-- HEADER IS START -->
+    <header>
+
+        <div class="header-wrapper">
+
+            <h1>
+                (Javascript BOM DOM):ASSIGNMENT
+            </h1>
+
+        </div>
+
+    </header>
+
+    <section>
+        <div class="module_wrapper">
+            <h2>MODULE:2 : (Data Types and Objects)</h2>
+        </div>
+    </section>
+    <!-- HEADER IS END -->
+
+    <!-- MAIN IS START -->
+    <section>
+
+        <div class="question_wrapper">
+
+            <div class="q_1">
+                <h3>[1] Write the code, one line for each action:</h3>
+                <blockquote>
+                    <h3>a) Create an empty object user.</h3>
+                    <p>
+                    <pre>var objectA = { }</pre>
+                    </p>
+
+                    <h3>b) Add the property name with the value John.</h3>
+                    <p>
+                    <pre>
+                        let obj = {
+                            age: 21,
+                            education: 'Bussinessman',
+                            college: 'University Of London'};
+
+                        obj.name = 'John';
+                        console.log(obj)
+                    </pre>
+                    </p>
+
+                    <h3>c) Add the property surname with the value Smith.</h3>
+                    <p>
+                    <pre>
+                        let obj = {
+                            name: 'John',
+                            age: 21,
+                            education: 'Bussinessman',
+                            college: 'University Of London'};
+
+                        obj.surname = 'Smith';
+                        console.log(obj)
+                    </pre>
+                    </p>
+
+                    <h3>d) Change the value of the name to Pete.</h3>
+                    <p>
+                    <pre>
+                        const obj = {
+                            name: 'John',
+                            age: 21,
+                            education: 'Bussinessman',
+                            college: 'University Of London'.
+                            
+                        };
+
+                            obj.Pete = obj.John;
+                            delete obj.John;
+                            console.log(obj);
+                    </pre>
+                    </p>
+
+                    <h3>e) Remove the property name from the object.</h3>
+                    <p>
+                    <pre>
+                        const obj = {
+                            name: 'John',
+                            age: 21,
+                            education: 'Bussinessman',
+                            college: 'University Of London'.
+
+                        };
+                            delete obj.John;
+                            console.log(obj);
+                    </pre>
+                    </p>
+                </blockquote>
+                <hr>
+            </div>
+
+            <div class="q_2">
+                <h3>[2] Is array copied?</h3>
+                <blockquote>
+                    <h3>
+                        <pre>
+                        <code>
+                            let fruits = ["Apples", "Pear", "Orange"];
+                            
+                            <i class="font_light">// push a new value into the "copy"</i>
+                            let shoppingCart = fruits;
+                            shoppingCart.push("Banana");
+                            
+                            <i class="font_light">// what's in fruits?</i>
+                            alert( fruits.length ); // ?
+                        </code>
+                    </pre>
+                    </h3>
+                    <button onclick="length()" class="btn">Check Length</button>
+                </blockquote>
+                <hr>
+            </div>
+
+            <div class="q_3">
+                <h3>[3] Map to Names:</h3>
+                <blockquote>
+                    <h3>
+                        <pre>
+                        <code>
+                            let john = { name: "John", age: 25 };
+                            let pete = { name: "Pete", age: 30 };
+                            let mary = { name: "Mary", age: 28 };
+                            let users = [ john, pete, mary ];
+                            let names = <i class="font_light">/* ... your code */</i>
+                            alert( names ); // John, Pete, Mary
+                        </code>
+                    </pre>
+                    </h3>
+                    <button onclick="maptonames()" class="btn">Names</button>
+                </blockquote>
+                <hr>
+            </div>
+
+            <div class="q_4">
+                <h3>[4] Map to Objects:</h3>
+                <blockquote>
+                    <h3>
+                        <pre>
+                        <code>
+                            let john = { name: "John", surname: "Smith", id: 1 };
+                            let pete = { name: "Pete", surname: "Hunt", id: 2 };
+                            let mary = { name: "Mary", surname: "Key", id: 3 };
+                            let users = [ john, pete, mary ];
+                            let usersMapped = <i class="font_light">/* ... your code ... */</i>
+                            <i class="font_light">/* usersMapped = [
+                            { fullName: "John Smith", id: 1 },
+                            { fullName: "Pete Hunt", id: 2 },
+                            { fullName: "Mary Key", id: 3 }
+                            ]*/</i>
+                            alert( usersMapped[0].id ) <i class="font_light">// 1</i>
+                            alert( usersMapped[0].fullName ) <i class="font_light">// John Smith</i>
+                        </code>
+                    </pre>
+                    </h3>
+                    <button onclick="maptoobject()" class="btn">Object</button>
+                </blockquote>
+                <hr>
+            </div>
+
+            <div class="q_5">
+                <h3>[5] Sum the properties There is a salaries object with arbitrary number of salaries. Write
+                    the function sumSalaries(salaries) that returns the sum of all salaries using
+                    Object.values and the for..of loop.If salaries is empty, then the result must be 0.</h3>
+                <blockquote>
+                    <h3>
+                        <pre>
+                        <code>
+                            let salaries = {
+                                "John": 100,
+                                "Pete": 300,
+                                "Mary": 250
+                                };
+                                alert( sumSalaries(salaries) ); <i class="font_light">// 650</i>
+                        </code>
+                    </pre>
+                    </h3>
+                    <button onclick="salary()" class="btn">Salary</button>
+                </blockquote>
+                <hr>
+            </div>
+
+            <div class="q_6">
+                <h3>[6] Destructuring assignment We have an object: Write the Destructuring assignment that
+                    reads:</h3>
+                <blockquote>
+                    <h3>
+                        <pre>
+                        <code>
+                            a) Name property into the variable name.
+                            b) Year’s property into the variable age.
+                            c) isAdmin property into the variable isAdmin (false, if no such property)
+                            d) let user = { 
+                                name: "John",
+                                years: 30
+                            };
+                        </code>
+                    </pre>
+                    </h3>
+                    <button onclick="aname()" class="btn">Name</button>
+                    <button onclick="Age()" class="btn">Age</button>
+                    <button onclick="property()" class="btn">Property ?</button>
+                </blockquote>
+                <hr>
+            </div>
+
+            <div class="q_7">
+                <h3>[7] Turn the object into JSON and back Turn the user into JSON and then read it back
+                    into another variable.</h3>
+                <blockquote>
+                    <h3>
+                        <pre>
+                        <code>
+                            user = {
+                                name: "John Smith",
+                                age: 35
+                            };
+                        </code>
+                    </pre>
+                    </h3>
+                    <button onclick="read()" class="btn">Read</button>
+                </blockquote>
+                <hr>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script >// Question-2 Start
+        let fruits = ["Apples", "Pear", "Orange"];
+        
+        // push a new value into the "copy"
+        let shoppingCart = fruits;
+        shoppingCart.push("Banana");
+        
+        // what's in fruits?
+        function length() {
+            alert(fruits.length);
+        }
+        // Question-2 End
+        // --------------------------------------------------------------------------------
+        // Question-3 Start
+        let john = { name: "John", age: 25 };
+        let pete = { name: "Pete", age: 30 };
+        let mary = { name: "Mary", age: 28 };
+        
+        let users = [john, pete, mary];
+        
+        let names = users.map(item => item.name);
+        
+        function maptonames() {
+            alert(names); // John, Pete, Mary
+        }
+        // Question-3 End
+        // --------------------------------------------------------------------------------
+        // Question-4 Start
+        let johns = { name: "johns", surname: "Smith", id: 1 };
+        let peter = { name: "Pete", surname: "Hunt", id: 2 };
+        let marys = { name: "Mary", surname: "Key", id: 3 };
+        
+        let userss = [johns, pete, mary];
+        
+        let usersMapped = userss.map(user => ({
+            fullName: `${user.name} ${user.surname}`,
+            id: user.id
+        }));
+        
+        function maptoobject() {
+            alert(usersMapped[0].id); // 1
+            alert(usersMapped[0].fullName); // John Smith
+        }
+        
+        // Question-4 End
+        // --------------------------------------------------------------------------------
+        // Question-5 Start
+        function sumSalaries(salaries) {
+        
+            let sum = 0;
+            for (let salary of Object.values(salaries)) {
+                sum += salary;
+            }
+        
+            return sum; // 650
+        }
+        
+        let salaries = {
+            "John": 100,
+            "Pete": 300,
+            "Mary": 250
+        };
+        
+        function salary() {
+            alert(sumSalaries(salaries)); // 650
+        }
+        // Question-5 End
+        // --------------------------------------------------------------------------------
+        // Question-6 Start
+        let user = {
+            fname: "John",
+            years: 30
+        };
+        
+        let { fname, years: age, isAdmin = false } = user;
+        
+        function aname() {
+            alert(fname); // John
+        };
+        function Age() {
+            alert(age); // 30
+        };
+        function property() {
+            alert(isAdmin); // false
+        };
+        // Question-6 End
+        // --------------------------------------------------------------------------------
+        // Question-7 Start
+        let person = {
+            name: "Johns",
+            age: 31,
+        
+            toString() {
+                return `{name: "${this.name}", age: ${this.age}}`;
+            }
+        };
+        
+        function read() {
+            alert(person); // {name: "John", age: 30}
+        }
+        // Question-7 End
+        </script>
+
+</body>
+
+</html>
