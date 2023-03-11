@@ -1,0 +1,36 @@
+{
+  "Login":[
+    {
+      "name":"hardik",
+      "password":"har@123"
+    }
+  ]
+  
+  ,
+  "restaurant": [
+    {
+      "id": 1,
+      "name": "Lapino's",
+      "address": "Ahmedabad-Gota",
+      "rating": "4.3"
+    },
+    {
+      "id": 2,
+      "name": "Shake-maker",
+      "address": "Ahmedabad-Chamdlodia",
+      "rating": "4.2"
+    },
+    {
+      "id": 3,
+      "name": "momoaunty",
+      "address": "Ahmedabad-vijaycrossroad",
+      "rating": "4.1"
+    },
+    {
+      "name": "Domino's pizza",
+      "address": "SP ringroad,ahmedabad",
+      "rating": "4",
+      "id": 4
+    }
+  ]
+}
